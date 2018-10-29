@@ -1,0 +1,31 @@
+# Base de Dades mipractica.com
+# @edt ASIX-M06
+# PRACTICA 1
+# -------------------------------------------------------------------
+dn: dc=mipractica,dc=ccom
+dc: mipractica
+description: Base de dades practica 1
+objectClass: dcObject
+objectClass: organization
+o: mipractica.com
+
+# Organizational units:
+
+dn: ou=usuaris,dc=mipractica,dc=com
+ou: usuaris
+description: Container per a usuaris
+objectclass: organizationalunit
+
+dn: ou=clients,dc=mipractica,dc=com
+ou: clients
+description: Container per a clients
+objectclass: organizationalunit
+
+dn: ou=grups,dc=mipractica,dc=com
+ou: grups
+description: Container per a grups
+objectclass: organizationalunit
+
+
+
+
