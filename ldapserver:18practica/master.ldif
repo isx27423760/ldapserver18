@@ -1,0 +1,12 @@
+dn: uid=user1000,ou=clients,dc=mipractica,dc=com
+objectclass: formacioacademica
+cn: user1000
+cn: alumne numero 1000
+sn: userito
+master: TRUE
+text: master cifu
+web: www.user1000.es
+preumaster: 2500
+foto: ///var/tmp/myphoto.jpg
+homephone: 555-212-2220
+mail: userito1000@gmail.com

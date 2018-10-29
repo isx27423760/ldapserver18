@@ -2,12 +2,12 @@
 #            logic,text, web, foto,enter
 # @edt ASIX-M06 2018-2019
 #
-attributetype (1.1.2.1.5 NAME 'master'
+attributetype (1.1.2.1.1 NAME 'master'
   DESC 'master TRUE'
   SYNTAX  1.3.6.1.4.1.1466.115.121.1.7 
   SINGLE-VALUE)
 
-attributetype (1.1.2.1.3 NAME 'text'
+attributetype (1.1.2.1.2 NAME 'text'
   DESC 'nom del master'
   EQUALITY caseExactMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{10})
@@ -17,17 +17,17 @@ attributetype (1.1.2.1.3 NAME 'web'
   EQUALITY caseExactMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
 
-attributetype (1.1.2.1.2 NAME 'preumaster'
+attributetype (1.1.2.1.4 NAME 'preumaster'
   SYNTAX  1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE)
 
-attributetype (1.1.2.1.4 NAME 'foto'
+attributetype (1.1.2.1.5 NAME 'foto'
   DESC 'foto del masterizado'
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
 
 objectclass (1.1.2.2.1 NAME 'formacioacademica'
-  DESC 'formacio'
-  SUP TOP
-  AUXILIARY
+  DESC 'formacio academica'
+  SUP inetOrgPerson
+  STRUCTURAL
   MUST  master
   MAY ( text $ web $ foto $ preumaster ) )

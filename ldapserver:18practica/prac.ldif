@@ -1,0 +1,84 @@
+# Base de Dades mipractica.com
+# @edt ASIX-M06
+# PRACTICA 1
+# -------------------------------------------------------------------
+dn: dc=mipractica,dc=com
+dc: mipractica
+description: Base de dades practica 1
+objectClass: dcObject
+objectClass: organization
+o: mipractica.com
+
+# Organizational units:
+
+dn: ou=usuaris,dc=mipractica,dc=com
+ou: usuaris
+description: Container per a usuaris
+objectclass: organizationalunit
+
+dn: ou=clients,dc=mipractica,dc=com
+ou: clients
+description: Container per a clients
+objectclass: organizationalunit
+
+dn: ou=grups,dc=mipractica,dc=com
+ou: grups
+description: Container per a grups
+objectclass: organizationalunit
+
+# grups:
+
+dn: cn=alumnes,ou=grups,dc=mipractica,dc=com
+cn: alumnes
+gidNumber: 600
+description: Grup dels alumnes
+objectclass: posixGroup
+
+dn: cn=profes,ou=grups,dc=mipractica,dc=com
+cn: profes
+gidNumber: 100
+description: Grup dels profes
+objectclass: posixGroup
+
+dn: cn=admin,ou=grups,dc=mipractica,dc=com
+cn: admin
+cn: system
+gidNumber: 10
+description: Grup dels administradors
+objectclass: posixGroup
+
+# Dades dels usuaris: 
+
+dn: uid=pere,ou=usuaris,dc=mipractica,dc=com
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Pere Pou
+sn: Pou
+homephone: 555-222-2221
+mail: pere@edt.org
+description: Watch out for this guy
+ou: Profes
+uid: pere
+uidNumber: 5001
+gidNumber: 600
+homeDirectory: /tmp/home/pere
+userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
+
+dn: uid=Admin System,ou=usuaris,dc=mipractica,dc=com
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Administrador Sistema
+cn: System Admin
+sn: System
+homephone: 555-222-2225
+mail: anna@edt.org
+description: Watch out for this girl
+ou: system
+ou: admin
+uid: admin
+uidNumber: 10
+gidNumber: 10
+homeDirectory: /tmp/home/admin
+userPassword: {SSHA}4mS0FycWc5bkpW8/a396SGNDTQUlFSX3
+
+
