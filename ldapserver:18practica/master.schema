@@ -21,11 +21,11 @@ attributetype (1.1.2.1.4 NAME 'preumaster'
   SYNTAX  1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE)
 
-attributetype (1.1.2.1.5 NAME 'foto'
+attributetype ( 1.1.2.1.5 NAME 'foto'
   DESC 'foto del masterizado'
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
 
-objectclass (1.1.2.2.1 NAME 'formacioacademica'
+objectclass (1.1.2.2.1 NAME 'master'
   DESC 'formacio academica'
   SUP inetOrgPerson
   STRUCTURAL

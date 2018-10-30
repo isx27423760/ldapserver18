@@ -1,12 +1,40 @@
 dn: uid=user1000,ou=clients,dc=mipractica,dc=com
-objectclass: formacioacademica
+objectclass: master
 cn: user1000
 cn: alumne numero 1000
 sn: userito
 master: TRUE
 text: master cifu
-web: www.user1000.es
+web: www.sport.es
 preumaster: 2500
-foto: ///var/tmp/myphoto.jpg
+foto: ///var/tmp/foto1.jpeg
 homephone: 555-212-2220
 mail: userito1000@gmail.com
+
+dn: uid=user2000,ou=clients,dc=mipractica,dc=com
+objectclass: master
+cn: user2000
+cn: alumne numero 2000
+sn: userito
+master: TRUE
+text: master cifu
+web: www.google.es
+preumaster: 2500
+foto: ///var/tmp/foto3.jpg
+homephone: 555-212-2220
+mail: userito2000@gmail.com
+
+dn: uid=user3000,ou=clients,dc=mipractica,dc=com
+objectclass: master
+cn: user3000
+cn: alumne numero 3000
+sn: userito
+master: TRUE
+text: master cifu
+web: www.mundodeportivo.com
+preumaster: 5000
+foto: ///vat/tmp/foto4.jpg
+homephone: 535-212-2220
+mail: userito3000@gmail.com
+
+
