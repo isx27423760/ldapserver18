@@ -1,5 +1,7 @@
 dn: uid=user1000,ou=clients,dc=mipractica,dc=com
 objectclass: master
+objectclass: inetOrgPerson
+objectclass: posixAccount
 cn: user1000
 cn: alumne numero 1000
 sn: userito
@@ -10,9 +12,14 @@ preumaster: 2500
 foto: ///var/tmp/foto1.jpeg
 homephone: 555-212-2220
 mail: userito1000@gmail.com
+uidNumber: 1525
+gidNumber: 5484
+homeDirectory: /home/user1000
 
 dn: uid=user2000,ou=clients,dc=mipractica,dc=com
 objectclass: master
+objectclass: inetOrgPerson
+objectclass: posixAccount
 cn: user2000
 cn: alumne numero 2000
 sn: userito
@@ -23,9 +30,14 @@ preumaster: 2500
 foto: ///var/tmp/foto3.jpg
 homephone: 555-212-2220
 mail: userito2000@gmail.com
+uidNumber: 2000
+gidNumber: 5645
+homeDirectory: /home/user2000
 
 dn: uid=user3000,ou=clients,dc=mipractica,dc=com
 objectclass: master
+objectclass: inetOrgPerson
+objectclass: posixAccount
 cn: user3000
 cn: alumne numero 3000
 sn: userito
@@ -36,5 +48,8 @@ preumaster: 5000
 foto: ///vat/tmp/foto4.jpg
 homephone: 535-212-2220
 mail: userito3000@gmail.com
+uidNumber: 3000
+gidNumber: 5485
+homeDirectory: /home/user3000
 
 

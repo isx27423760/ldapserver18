@@ -26,6 +26,11 @@ ou: grups
 description: Container per a grups
 objectclass: organizationalunit
 
+dn: ou=formacio,dc=mipractica,dc=com
+ou: formacio
+description: Container per a formacio
+objectclass: organizationalunit
+
 # grups:
 
 dn: cn=alumnes,ou=grups,dc=mipractica,dc=com

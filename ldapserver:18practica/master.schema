@@ -27,7 +27,7 @@ attributetype ( 1.1.2.1.5 NAME 'foto'
 
 objectclass (1.1.2.2.1 NAME 'master'
   DESC 'formacio academica'
-  SUP inetOrgPerson
-  STRUCTURAL
+  SUP TOP
+  AUXILIARY
   MUST  master
   MAY ( text $ web $ foto $ preumaster ) )
