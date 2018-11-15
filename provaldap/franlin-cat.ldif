@@ -1,0 +1,49 @@
+# Base de Dades de franlin.cat
+# @edt ASIX-M06
+# PROVA 1
+# -------------------------------------------------------------------
+dn: dc=franlin,dc=cat
+dc: franlin
+description: Base de dades exam franlin prova
+objectClass: dcObject
+objectClass: organization
+o: franlin.cat
+
+# Organizational units:
+
+dn: ou=socis,dc=franlin,dc=cat
+ou: socis
+description: Container per a socis
+objectclass: organizationalunit
+
+dn: ou=simpatitzants,dc=franlin,dc=cat
+ou: simpatitzants
+description: Container per a simpatitzants
+objectclass: organizationalunit
+
+# socis
+dn: idcat=1000,ou=socis,dc=franlin,dc=cat
+objectclass: indepeOrgPerson
+idcat: 1000
+sardanas: TRUE
+foto: ///var/tmp/foto3.jpg
+lema: mai rendirse si et caus mala suerte
+twitter: soci100lento
+
+dn: idcat=2000,ou=socis,dc=franlin,dc=cat
+objectclass: indepeOrgPerson
+idcat: 2000
+sardanas: FALSE
+foto: ///var/tmp/foto2.jpg
+lema: amunt barça per sempre
+twitter: soci200lento
+
+dn: idcat=3000,ou=socis,dc=franlin,dc=cat
+objectclass: indepeOrgPerson
+idcat: 3000
+sardanas: TRUE
+foto: ///var/tmp/foto1.jpg
+lema: no tinc lema asi que adeu
+twitter: soci300lento
+
+

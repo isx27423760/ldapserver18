@@ -1,0 +1,26 @@
+dn: idcat=2000,ou=socis,dc=franlin,dc=cat
+changetype: modify
+add: objectClass
+objectClass: llarenaAccount
+-
+add: galeres
+galeres: TRUE
+-
+add: delictes
+delictes: pallo amb motlssssssssssssssss delictes
+-
+add: anyscomdemma
+anyscomdemma: 5
+
+dn: idcat=3000,ou=socis,dc=franlin,dc=cat
+changetype: modify
+add: objectClass
+objectClass: llarenaAccount
+-
+add: galeres
+galeres: FALSE
+-
+add: delictes
+delictes: capppppppppppppppppppppp
+
+
