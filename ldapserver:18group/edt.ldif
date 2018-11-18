@@ -45,14 +45,20 @@ dn: cn=alumnes,ou=grups,dc=edt,dc=org
 cn: alumnes
 gidNumber: 600
 description: Grup dels alumnes
+objectclass: top
 objectclass: posixGroup
+memberUid: pau
+memberUid: pere
+memberUid: anna
 
 dn: cn=profes,ou=grups,dc=edt,dc=org
 cn: profes
 gidNumber: 100
 description: Grup dels profes
+objectclass: top
 objectclass: posixGroup
-
+memberUid: marta
+memberUid: jordi
 
 # users
 
@@ -111,10 +117,10 @@ sn: Mas
 homephone: 555-222-2223
 mail: marta@edt.org
 description: Watch out for this girl
-ou: Alumnes
+ou: profes
 uid: marta
 uidNumber: 5003
-gidNumber: 600
+gidNumber: 100
 homeDirectory: /tmp/home/marta
 userPassword: {SSHA}9+1F2f5vcW8z/tmSzYNWdlz5GbDCyoOw
 
@@ -127,7 +133,6 @@ sn: Mas
 homephone: 555-222-2224
 mail: jordi@edt.org
 description: Watch out for this girl
-ou: Alumnes
 ou: Profes
 uid: jordi
 uidNumber: 5004
