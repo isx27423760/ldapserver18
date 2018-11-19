@@ -4,3 +4,11 @@
 
 Servidor ldap amb edt.org totes les dades per uid i es
 conectara amb el client que configurem amb pam
+
+
+#### Execució
+
+```
+$ docker run --rm --name ldap -h ldap --net ldapnet -d edtasixm06/ldapserver:18group
+```
+

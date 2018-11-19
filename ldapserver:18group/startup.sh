@@ -4,5 +4,4 @@
 #--------------------------------------
 
 /opt/docker/install.sh && echo "Install OK"
-/bin/bash
-#/sbin/slapd && echo "slapd OK"
+/sbin/slapd -d0 && echo "slapd OK"
