@@ -8,7 +8,16 @@ conectara amb el client que configurem amb pam
 
 #### Execució
 
+* Si fem servir per muntar els homes samba , fem servir la xarxa sambanet
+
 ```
-$ docker run --rm --name ldap -h ldap --net ldapnet -d edtasixm06/ldapserver:18group
+$ docker run --rm --name ldap -h ldap --net sambanet -d francs2/ldapserver:18group
 ```
+
+* o 
+
+```
+$ docker run --rm --name ldap -h ldap --net ldapnet -d francs2/ldapserver:18group
+```
+
 
