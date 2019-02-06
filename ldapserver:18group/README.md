@@ -17,7 +17,7 @@ $ docker run --rm --name ldap -h ldap --net sambanet -d francs2/ldapserver:18gro
 * o per a fer servir ssh 
 
 ```
-$ docker run --rm --name ldap -h ldap --net ldapnet -d francs2/ldapserver:18group
+$ docker run --rm --name ldap -h ldap --net sshnet -d francs2/ldapserver:18group
 ```
 
 
